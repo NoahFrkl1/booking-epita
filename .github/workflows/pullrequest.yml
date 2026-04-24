@@ -42,8 +42,8 @@ jobs:
         uses: google/osv-scanner-action/osv-reporter-action@v2.3.5
         with:
           scan-args: |-
-            --new-sarif after.sarif
-            --old-sarif before.sarif
+            --new after.sarif
+            --old before.sarif
             --output diff.sarif
         continue-on-error: true
 
